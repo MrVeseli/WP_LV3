@@ -156,7 +156,7 @@ function updateCart() {
             button.addEventListener('click', removeFromCart)
         });
 
-        totalPrice = (totalPrice + item.price * item.quantity).toFixed(2);
+        totalPrice = totalPrice + item.price * item.quantity;
     })
     if (cart.length > 0) {
         buyButton.style.visibility = "visible"
